@@ -15,12 +15,12 @@
   ```
   kubectl apply -f sc.yaml
   ```
-- Отредактируйте манифест pv.yaml под себя и создайте с помощьюе него Persistent Volume: 
+- Отредактируйте манифест pv.yaml под себя и создайте с помощью него Persistent Volume: 
 
   ```
   kubectl apply -f pv.yaml
   ```
-- Отредактируйте манифест pvc.yaml под себя и создайте с помощьюе него запрос (Persistent Volume Claim) на получение Persistent Volume:
+- Отредактируйте манифест pvc.yaml под себя и создайте с помощью него запрос (Persistent Volume Claim) на получение Persistent Volume:
 
   ```
   kubectl apply -f pvc.yaml
