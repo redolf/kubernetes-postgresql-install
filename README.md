@@ -41,7 +41,7 @@
   helm repo add bitnami https://charts.bitnami.com/bitnami && helm repo update
   ```
 - Установим чарт Postgresql:
-  > ***primary.persistence.existingClaim=pvc-postgresql*** (Указываем наш Persistent Volume Claim); volumePermissions.enabled=true (Включаем назначение необходимых прав на каталог с базами данных); auth.enablePostgresUser=true (Включаем создание пользователя по умолчанию)
+  > **primary.persistence.existingClaim=pvc-postgresql** (Указываем наш Persistent Volume Claim); volumePermissions.enabled=true (Включаем назначение необходимых прав на каталог с базами данных); auth.enablePostgresUser=true (Включаем создание пользователя по умолчанию)
 
   ```
   helm --install postgresql bitnami/postgresql --set primary.persistence.existingClaim=pvc-postgresql --set volumePermissions.enabled=true --set auth.enablePostgresUser=true
