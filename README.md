@@ -46,6 +46,7 @@
   > **primary.persistence.existingClaim=pvc-postgresql** (Указываем наш Persistent Volume Claim);
   > **volumePermissions.enabled=true** (Включаем назначение необходимых прав на каталог с базами данных); 
   > **auth.enablePostgresUser=true** (Включаем создание пользователя по умолчанию).
+  > [Подробнее о проекте bitnami/postgresql ](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
 
   ```
   helm --install postgresql bitnami/postgresql --set primary.persistence.existingClaim=pvc-postgresql --set volumePermissions.enabled=true --set auth.enablePostgresUser=true
