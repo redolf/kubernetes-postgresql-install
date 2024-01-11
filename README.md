@@ -42,7 +42,9 @@
   ```
 - Установим чарт Postgresql:
   > **primary.persistence.existingClaim=pvc-postgresql** (Указываем наш Persistent Volume Claim);
+  
   > **volumePermissions.enabled=true** (Включаем назначение необходимых прав на каталог с базами данных); 
+  
   > **auth.enablePostgresUser=true** (Включаем создание пользователя по умолчанию)
 
   ```
